@@ -2,13 +2,12 @@
 2. const hydraExpress = require('hydra-express')
 3. const express = hydraExpress.getExpress()
 
-4. 
-    a. const app = express.Router()
-    b. const router = express.Router()
+4. const app = express.Router()
+5. const router = express.Router()
 
-5. [install](https://github.com/microsoftarchive/redis/releases/latest) and start redis server
+6. [install](https://github.com/microsoftarchive/redis/releases/latest) and start redis server
 
-6. create config.json file
+7. create config.json file
 
         {
             "hydra": {
@@ -26,7 +25,7 @@
         }
         
 
-7. setup microservice
+8. setup microservice
 
         hydraExpress.init('./config.json', ()=> {
 
