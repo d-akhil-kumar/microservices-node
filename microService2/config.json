@@ -1,8 +1,8 @@
 {
     "hydra": {
-        "serviceName": "microService_2",
+        "serviceName": "microservice_2",
         "serviceIP": "",
-        "servicePort": "8183",
+        "servicePort": 8183,
         "serviceType": "",
         "serviceDescription": "Simple microservice 2",
         "redis": {

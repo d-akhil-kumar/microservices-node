@@ -1,6 +1,6 @@
 {
     "hydra": {
-        "serviceName": "microService_1",
+        "serviceName": "microservice_1",
         "serviceIP": "",
         "servicePort": 8182,
         "serviceType": "",
