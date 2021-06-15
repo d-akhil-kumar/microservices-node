@@ -9,6 +9,7 @@
 5. [install](https://github.com/microsoftarchive/redis/releases/latest) and start redis server
 
 6. create config.json file
+
         {
             "hydra": {
                 "serviceName": "microService_1",
