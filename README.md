@@ -7,11 +7,11 @@
 
 6. [install](https://github.com/microsoftarchive/redis/releases/latest) and start redis server
 
-7. create config.json file
+7. create config.json file, NOTE: serviceName should be strictly lowercase
 
         {
             "hydra": {
-                "serviceName": "microService_1",
+                "serviceName": "microservice_1",  
                 "serviceIP": "",
                 "servicePort": 8182,
                 "serviceType": "",
@@ -34,3 +34,26 @@
 
             hydraExpress.registerRoutes({'/service1':app})
         })
+
+
+9. communication btw microservices
+
+    const hydra = hydraExpress.getHydra()
+
+    router.get('/', async (req,res,next)=> {
+
+    const message = hydra.createUMFMessage(
+            {
+                to: 'microservice_1:[get]/service1',
+                from: 'microService_2',
+                body: {}
+            }
+        )
+
+        const data = await hydra.makeAPIRequest(message)
+
+        res.status(200).json({
+            msg: "Hello from service 2, " + data.msg,        
+        })
+
+    })
