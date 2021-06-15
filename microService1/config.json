@@ -1,0 +1,14 @@
+{
+    "hydra": {
+        "serviceName": "microService_1",
+        "serviceIP": "",
+        "servicePort": 8182,
+        "serviceType": "",
+        "serviceDescription": "Simple microservice 1",
+        "redis": {
+            "url": "127.0.0.1",
+            "port": 6379,
+            "db": 15
+        }
+    }
+}
