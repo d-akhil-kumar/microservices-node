@@ -1,0 +1,28 @@
+{
+  "name": "microservices-node",
+  "version": "1.0.0",
+  "description": "implementation of microservices",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d-akhil-kumar/microservices-node.git"
+  },
+  "keywords": [],
+  "author": "akhil kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d-akhil-kumar/microservices-node/issues"
+  },
+  "homepage": "https://github.com/d-akhil-kumar/microservices-node#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hydra-express": "^1.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
